@@ -27,3 +27,15 @@ Take a look at how FT's are done with OpenCV, [https://docs.opencv.org/3.0-beta/
 
 The frequency components of an image can be displayed after doing a Fourier Transform \(FT\). An FT looks at the components of an image \(edges that are high-frequency, and areas of smooth color as low-frequency\), and plots the frequencies that occur as points in spectrum. FT treats patterns of intensity in an image as sine waves with a particular frequency, and you can look at an interesting visualization of these sine wave components [https://plus.maths.org/content/fourier-transforms-images](https://plus.maths.org/content/fourier-transforms-images)
 
+![](/assets/Screenshot 2019-10-30 at 7.43.17 AM.png)Low frequencies are at the center of the frequency transform image.
+
+The transform images for these example show that the solid image has most low-frequency components \(as seen by the center bright spot\).
+
+The stripes tranform image contains low-frequencies for the areas of white and black color and high frequencies for the edges in between those colors. The stripes transform image also tells us that there is one dominating direction for these frequencies; vertical stripes are represented by a horizontal line passing through the center of the frequency transform image.
+
+Next, let's see what this looks like applied to a real-world image.
+
+
+
+Notice that this image has components of all frequencies. You can see a bright spot in the center of the transform image, which tells us that a large portion of the image is low-frequency; this makes sense since the body of the birds and background are solid colors. The transform image also tells us that there are **two **dominating directions for these frequencies; vertical edges \(from the edges of birds\) are represented by a horizontal line passing through the center of the frequency transform image, and horizontal edges \(from the branch and tops of the birds' heads\) are represented by a vertical line passing through the center.
+
