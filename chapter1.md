@@ -25,13 +25,5 @@ Take a look at how FT's are done with OpenCV, [https://docs.opencv.org/3.0-beta/
 
 ![](/assets/Screenshot 2019-10-30 at 7.32.06 AM.png)This decomposition is particularly interesting in the context of bandpass filters, which can isolate a certain range of frequencies and mask an image according to a low and high frequency threshold.
 
-
-
-
-
-
-
-
-
-
+The frequency components of an image can be displayed after doing a Fourier Transform \(FT\). An FT looks at the components of an image \(edges that are high-frequency, and areas of smooth color as low-frequency\), and plots the frequencies that occur as points in spectrum. FT treats patterns of intensity in an image as sine waves with a particular frequency, and you can look at an interesting visualization of these sine wave components [https://plus.maths.org/content/fourier-transforms-images](https://plus.maths.org/content/fourier-transforms-images)
 
