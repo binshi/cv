@@ -64,7 +64,7 @@ Gradients are a measure of intensity change in an image, and they generally mark
 
 The Sobel filter is very commonly used in edge detection and in finding patterns in intensity in an image. Applying a Sobel filter to an image is a way of **taking \(an approximation\) of the derivative of the image **in the x or y direction. The operators forSobel\_x​ and Sobel\_y​, respectively, look like this:
 
-![](/assets/Screenshot 2019-10-30 at 12.19.39 PM.png) 
+![](/assets/Screenshot 2019-10-30 at 12.19.39 PM.png)
 
 ### ![](/assets/Screenshot 2019-10-30 at 12.25.12 PM.png) {#span-classmathquill-ud-mathxspan-vs-span-classmathquill-ud-mathyspan}
 
@@ -72,6 +72,13 @@ The Sobel filter is very commonly used in edge detection and in finding patterns
 
 In the above images, you can see that the gradients taken in both the x and the y directions detect the edges of the brain and pick up other edges. Taking the gradient in the x direction emphasizes edges closer to vertical. Alternatively, taking the gradient in the y direction emphasizes edges closer to horizontal.
 
-  
 ![](/assets/Screenshot 2019-10-30 at 12.25.30 PM.png)![](/assets/Screenshot 2019-10-30 at 12.25.24 PM.png)
+
+Open CV filtering: [https://opencv-python-tutroals.readthedocs.io/en/latest/py\_tutorials/py\_imgproc/py\_filtering/py\_filtering.html](https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_filtering/py_filtering.html)
+
+#### **Low pass filter**![](/assets/Screenshot 2019-10-30 at 12.47.34 PM.png)Averaging filter![](/assets/Screenshot 2019-10-30 at 12.48.27 PM.png)
+
+#### Gaussian  filter![](/assets/Screenshot 2019-10-30 at 12.46.12 PM.png)
+
+
 
