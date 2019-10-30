@@ -24,5 +24,5 @@ The Hough transform is used in a variety of shape-recognition applications, as s
 
 [http://homepages.inf.ed.ac.uk/rbf/HIPR2/hough.htm](http://homepages.inf.ed.ac.uk/rbf/HIPR2/hough.htm)
 
-![](/assets/Screenshot 2019-10-30 at 4.43.33 PM.png)![](/assets/Screenshot 2019-10-30 at 4.44.46 PM.png)
+![](/assets/Screenshot 2019-10-30 at 4.43.33 PM.png)![](/assets/Screenshot 2019-10-30 at 4.47.53 PM.png)![](/assets/Screenshot 2019-10-30 at 4.44.46 PM.png)OpenCV Hough space: [https://opencv-python-tutroals.readthedocs.io/en/latest/py\_tutorials/py\_imgproc/py\_houghlines/py\_houghlines.html](https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_houghlines/py_houghlines.html)
 
