@@ -13,5 +13,16 @@ To detect these changes, you’ll be using and creating specific image filters t
 
 Similarly, frequency in images is a**rate of change**. But, what does it means for an image to change? Well, images change in space, and a high frequency image is one where the intensity changes a lot. And the level of brightness changes quickly from one pixel to the next. A low frequency image may be one that is relatively uniform in brightness or changes very slowly. This is easiest to see in an example.
 
-![](/assets/Screenshot 2019-10-30 at 7.25.54 AM.png)
+![](/assets/Screenshot 2019-10-30 at 7.25.54 AM.png)Most images have both high-frequency and low-frequency components. In the image above, on the scarf and striped shirt, we have a high-frequency image pattern; this part changes very rapidly from one brightness to another. Higher up in this same image, we see parts of the sky and background that change very gradually, which is considered a smooth, low-frequency pattern.
+
+**High-frequency components also correspond to the edges of objects in images**, which can help us classify those objects.
+
+###  Fourier Transform
+
+The Fourier Transform \(FT\) is an important image processing tool which is used to decompose an image into its frequency components. The output of an FT represents the image in the frequency domain, while the input image is the spatial domain \(x, y\) equivalent. In the frequency domain image, each point represents a particular frequency contained in the spatial domain image. So, for images with a lot of high-frequency components \(edges, corners, and stripes\), there will be a number of points in the frequency domain at high frequency values.
+
+Take a look at how FT's are done with OpenCV,[here](https://docs.opencv.org/3.0-beta/doc/py_tutorials/py_imgproc/py_transforms/py_fourier_transform/py_fourier_transform.html).
+
+  
+
 
