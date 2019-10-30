@@ -20,5 +20,9 @@ We know how to detect the edges of objects in images, but how can we begin to fi
 
 The Hough transform is used in a variety of shape-recognition applications, as seen in the images pictured below. On the left you see how a Hough transform can find the edges of a phone screen and on the right you see how it's applied to an aerial image of farms \(green circles in this image\).
 
-![](/assets/Screenshot 2019-10-30 at 4.39.09 PM.png)
+### ![](/assets/Screenshot 2019-10-30 at 4.39.09 PM.png)Hough Transform
+
+[http://homepages.inf.ed.ac.uk/rbf/HIPR2/hough.htm](http://homepages.inf.ed.ac.uk/rbf/HIPR2/hough.htm)
+
+![](/assets/Screenshot 2019-10-30 at 4.43.33 PM.png)![](/assets/Screenshot 2019-10-30 at 4.44.46 PM.png)
 
