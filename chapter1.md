@@ -35,7 +35,7 @@ The stripes tranform image contains low-frequencies for the areas of white and b
 
 Next, let's see what this looks like applied to a real-world image.
 
-
+![](/assets/Screenshot 2019-10-30 at 7.48.14 AM.png)
 
 Notice that this image has components of all frequencies. You can see a bright spot in the center of the transform image, which tells us that a large portion of the image is low-frequency; this makes sense since the body of the birds and background are solid colors. The transform image also tells us that there are **two **dominating directions for these frequencies; vertical edges \(from the edges of birds\) are represented by a horizontal line passing through the center of the frequency transform image, and horizontal edges \(from the branch and tops of the birds' heads\) are represented by a vertical line passing through the center.
 
