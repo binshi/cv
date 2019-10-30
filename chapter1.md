@@ -39,3 +39,39 @@ Next, let's see what this looks like applied to a real-world image.
 
 Notice that this image has components of all frequencies. You can see a bright spot in the center of the transform image, which tells us that a large portion of the image is low-frequency; this makes sense since the body of the birds and background are solid colors. The transform image also tells us that there are **two **dominating directions for these frequencies; vertical edges \(from the edges of birds\) are represented by a horizontal line passing through the center of the frequency transform image, and horizontal edges \(from the branch and tops of the birds' heads\) are represented by a vertical line passing through the center.
 
+### Edge Handling {#edge-handling}
+
+Kernel convolution relies on centering a pixel and looking at it's surrounding neighbors. So, what do you do if there are no surrounding pixels like on an image corner or edge? Well, there are a number of ways to process the edges, which are listed below. It’s most common to use padding, cropping, or extension. In extension, the border pixels of an image are copied and extended far enough to result in a filtered image of the same size as the original image.
+
+**Extend**  
+The nearest border pixels are conceptually extended as far as necessary to provide values for the convolution. Corner pixels are extended in 90° wedges. Other edge pixels are extended in lines.
+
+**Padding**  
+The image is padded with a border of 0's, black pixels.
+
+**Crop**  
+Any pixel in the output image which would require values from beyond the edge is skipped. This method can result in the output image being slightly smaller, with the edges having been cropped.
+
+Unfortunately, while low-pass filtering smooths out noise, high-pass filtering does just the opposite: itamplifies noise. You can get away with this if the original image is not too noisy; otherwise the noise will overwhelm the image. MaxIm DL includes a very useful "range-restricted filter" option; you can high-pass filter only the brightest parts of the image, where the signal-to-noise ratio is highest.
+
+High-pass filtering can also cause small, faint details to be greatly exaggerated. An over-processed image will look grainy and unnatural, and point sources will have dark donuts around them. So while high-pass filtering can often improve an image by sharpening detail, overdoing it can actually degrade the image quality significantly.
+
+### ![](/assets/Screenshot 2019-10-30 at 8.18.23 AM.png)![](/assets/Screenshot 2019-10-30 at 8.19.02 AM.png)Gradients
+
+Gradients are a measure of intensity change in an image, and they generally mark object boundaries and changing area of light and dark. If we think back to treating images as functions,_F\(x, y\)_, we can think of the gradient as a derivative operation_F**’**\(x, y\)_. Where the derivative is a measurement of intensity change.
+
+## Sobel filters {#sobel-filters}
+
+The Sobel filter is very commonly used in edge detection and in finding patterns in intensity in an image. Applying a Sobel filter to an image is a way of **taking \(an approximation\) of the derivative of the image **in the x or y direction. The operators forSobel\_x​ and Sobel\_y​, respectively, look like this:
+
+![](/assets/Screenshot 2019-10-30 at 12.19.39 PM.png) 
+
+### ![](/assets/Screenshot 2019-10-30 at 12.25.12 PM.png) {#span-classmathquill-ud-mathxspan-vs-span-classmathquill-ud-mathyspan}
+
+### x vs. y {#span-classmathquill-ud-mathxspan-vs-span-classmathquill-ud-mathyspan}
+
+In the above images, you can see that the gradients taken in both the x and the y directions detect the edges of the brain and pick up other edges. Taking the gradient in the x direction emphasizes edges closer to vertical. Alternatively, taking the gradient in the y direction emphasizes edges closer to horizontal.
+
+  
+![](/assets/Screenshot 2019-10-30 at 12.25.30 PM.png)![](/assets/Screenshot 2019-10-30 at 12.25.24 PM.png)
+
