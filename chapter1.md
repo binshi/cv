@@ -17,12 +17,21 @@ Similarly, frequency in images is a**rate of change**. But, what does it means f
 
 **High-frequency components also correspond to the edges of objects in images**, which can help us classify those objects.
 
-###  Fourier Transform
+### Fourier Transform
 
 The Fourier Transform \(FT\) is an important image processing tool which is used to decompose an image into its frequency components. The output of an FT represents the image in the frequency domain, while the input image is the spatial domain \(x, y\) equivalent. In the frequency domain image, each point represents a particular frequency contained in the spatial domain image. So, for images with a lot of high-frequency components \(edges, corners, and stripes\), there will be a number of points in the frequency domain at high frequency values.
 
-Take a look at how FT's are done with OpenCV,[here](https://docs.opencv.org/3.0-beta/doc/py_tutorials/py_imgproc/py_transforms/py_fourier_transform/py_fourier_transform.html).
+Take a look at how FT's are done with OpenCV, [https://docs.opencv.org/3.0-beta/doc/py\_tutorials/py\_imgproc/py\_transforms/py\_fourier\_transform/py\_fourier\_transform.html](https://docs.opencv.org/3.0-beta/doc/py_tutorials/py_imgproc/py_transforms/py_fourier_transform/py_fourier_transform.html)
 
-  
+![](/assets/Screenshot 2019-10-30 at 7.32.06 AM.png)This decomposition is particularly interesting in the context of bandpass filters, which can isolate a certain range of frequencies and mask an image according to a low and high frequency threshold.
+
+
+
+
+
+
+
+
+
 
 
