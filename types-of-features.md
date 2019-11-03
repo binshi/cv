@@ -60,5 +60,16 @@ Closing is reverse of Opening, Dilation followed by Erosion. It is useful in clo
 closing = cv2.morphologyEx(img, cv2.MORPH_CLOSE, kernel)
 ```
 
-![](/assets/Screenshot 2019-11-03 at 12.22.13 PM.png)
+### ![](/assets/Screenshot 2019-11-03 at 12.22.13 PM.png)Image Segmentation
+
+Now that we are familiar with a few simple feature types, it may be useful to look at how we can group together different parts of an image by using these features. Grouping or segmenting images into distinct parts is known as image segmentation.
+
+The simplest case for image segmentation is in background subtraction. In video and other applications, it is often the case that a human has to be isolated from a static or moving background, and so we have to use segmentation methods to distinguish these areas. Image segmentation is also used in a variety of complex recognition tasks, such as in classifying every pixel in an image of the road.
+
+A couple ways to segment an image:
+
+1. using contours to draw boundaries around different parts of an image, and
+2. clustering image data by some measure of color or texture similarity.
+
+
 
