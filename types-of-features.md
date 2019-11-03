@@ -8,5 +8,5 @@
 
 **Corner Detectors**
 
-![](/assets/Screenshot 2019-11-03 at 9.39.27 AM.png)![](/assets/Screenshot 2019-11-03 at 9.43.50 AM.png)![](/assets/Screenshot 2019-11-03 at 9.44.00 AM.png)![](/assets/Screenshot 2019-11-03 at 9.49.19 AM.png)![](/assets/Screenshot 2019-11-03 at 9.38.50 AM.png)the magnitude should be calculated as the sum of the Gx and Gy components.`rho = sqrt(Gx^2 + Gy^2) `.
+![](/assets/Screenshot 2019-11-03 at 9.39.27 AM.png)![](/assets/Screenshot 2019-11-03 at 9.43.50 AM.png)![](/assets/Screenshot 2019-11-03 at 9.44.00 AM.png)![](/assets/Screenshot 2019-11-03 at 9.49.19 AM.png)![](/assets/Screenshot 2019-11-03 at 9.38.50 AM.png)the magnitude should be calculated as the sum of the Gx\(Sobel x\) and Gy\(Sobel y\) components.`rho = sqrt(Gx^2 + Gy^2)`.
 
