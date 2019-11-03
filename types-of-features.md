@@ -42,7 +42,7 @@ erosion = cv2.erode(image, kernel, iterations = 1)
 
 ### ![](/assets/Screenshot 2019-11-03 at 12.20.06 PM.png)Opening
 
-As mentioned, above, these operations are often_combined_for desired results! One such combination is called**opening**, which is**erosion followed by dilation**. This is useful in noise reduction in which erosion first gets rid of noise \(and shrinks the object\) then dilation enlarges the object again, but the noise will have disappeared from the previous erosion!
+As mentioned, above, these operations are often\_combined\_for desired results! One such combination is called**opening**, which is**erosion followed by dilation**. This is useful in noise reduction in which erosion first gets rid of noise \(and shrinks the object\) then dilation enlarges the object again, but the noise will have disappeared from the previous erosion!
 
 To implement this in OpenCV, we use the function`morphologyEx`with our original image, the operation we want to perform, and our kernel passed in.
 
@@ -52,7 +52,7 @@ opening = cv2.morphologyEx(image, cv2.MORPH_OPEN, kernel)
 
 ### ![](/assets/Screenshot 2019-11-03 at 12.21.22 PM.png)Closing
 
-**Closing**is the reverse combination of opening; it’s**dilation followed by erosion**, which is useful in_closing_small holes or dark areas within an object.
+**Closing**is the reverse combination of opening; it’s**dilation followed by erosion**, which is useful in\_closing\_small holes or dark areas within an object.
 
 Closing is reverse of Opening, Dilation followed by Erosion. It is useful in closing small holes inside the foreground objects, or small black points on the object.
 
@@ -60,5 +60,5 @@ Closing is reverse of Opening, Dilation followed by Erosion. It is useful in clo
 closing = cv2.morphologyEx(img, cv2.MORPH_CLOSE, kernel)
 ```
 
-
+![](/assets/Screenshot 2019-11-03 at 12.22.13 PM.png)
 
