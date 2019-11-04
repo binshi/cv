@@ -8,7 +8,13 @@ Features alone and together: Now, you've seen examples of shape-based features, 
 
 ### FAST\(**Features from Accelerated Segments Test\):**
 
-Given a pixel p in an array fast compares the brightness of p to surrounding 16 pixels that are in a small circle around p. Pixels in the circle is then sorted into three classes \(lighter than p, darker than p or similar to p\). If more than 8 pixels are darker or brighter than p than it is selected as a keypoint. So keypoints found by fast gives us information of the location of determining edges in an image.
+Given a pixel p in an array fast compares the brightness of p to surrounding 16 pixels that are in a small circle around p. Pixels in the circle is then sorted into three classes \(lighter than p, darker than p or similar to p\). If more than 8 pixels are darker or brighter than p than it is selected as a keypoint. So keypoints found by fast gives us information of the location of determining edges in an image.![](/assets/Screenshot 2019-11-04 at 5.51.46 PM.png)
+
+### BRIEF\(Binary Robust Independent Elementary Features\)
+
+![](/assets/Screenshot 2019-11-04 at 6.18.39 PM.png)
+
+### Scale And Rotation Invariance![](/assets/Screenshot 2019-11-04 at 6.13.42 PM.png)![](/assets/Screenshot 2019-11-04 at 6.15.28 PM.png)
 
 
 
