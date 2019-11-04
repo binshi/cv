@@ -77,5 +77,7 @@ A couple ways to segment an image:
 
 ### K-means clustering![](/assets/Screenshot 2019-11-04 at 8.07.54 AM.png)
 
+[https://docs.opencv.org/3.0-beta/doc/py\_tutorials/py\_ml/py\_kmeans/py\_kmeans\_opencv/py\_kmeans\_opencv.html](https://docs.opencv.org/3.0-beta/doc/py_tutorials/py_ml/py_kmeans/py_kmeans_opencv/py_kmeans_opencv.html)
+
 
 
