@@ -6,5 +6,9 @@ Features alone and together: Now, you've seen examples of shape-based features, 
 
 ### ![](/assets/Screenshot 2019-11-04 at 5.47.14 PM.png)![](/assets/Screenshot 2019-11-04 at 5.47.43 PM.png)
 
+### FAST\(**Features from Accelerated Segments Test\):**
+
+
+
 
 
