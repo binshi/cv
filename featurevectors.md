@@ -12,15 +12,13 @@ Detect keypoints in a given image. FAST compares the brightness of a pixel\(Ip\)
 
 ![](/assets/Screenshot 2019-11-05 at 7.15.13 PM.png)
 
-
-
 Given a pixel p in an array fast compares the brightness of p to surrounding 16 pixels that are in a small circle around p. Pixels in the circle is then sorted into three classes \(lighter than p, darker than p or similar to p\). If more than 8 pixels are darker or brighter than p than it is selected as a keypoint. So keypoints found by fast gives us information of the location of determining edges in an image.![](/assets/Screenshot 2019-11-04 at 5.51.46 PM.png)
 
 ### 
 
 ### BRIEF\(Binary Robust Independent Elementary Features\)
 
-Convert the keypoints detected by FAST and convert them into feature vectors.
+Convert the keypoints detected by FAST and convert them into feature vectors\(binary feature vector\).Binary feature is stored easily in memory and  can be computed fast and can be run with devices with limited memory.
 
 ![](/assets/Screenshot 2019-11-04 at 6.18.39 PM.png)
 
@@ -44,7 +42,7 @@ As its name suggests, the HOG algorithm, is based on creating histograms from th
 
 2. Calculate the magnitude and direction of the gradient for each individual pixel in the detection window.
 
-3. Divide the detection window into connected_cells_of pixels, with all cells being of the same size \(see Fig. 3\). The size of the cells is a free parameter and it is usually chosen so as to match the scale of the features that want to be detected. For example, in a 64 x 128 pixel detection window, square cells 6 to 8 pixels wide are suitable for detecting human limbs.
+3. Divide the detection window into connected\_cells\_of pixels, with all cells being of the same size \(see Fig. 3\). The size of the cells is a free parameter and it is usually chosen so as to match the scale of the features that want to be detected. For example, in a 64 x 128 pixel detection window, square cells 6 to 8 pixels wide are suitable for detecting human limbs.
 
 4. Create a Histogram for each cell, by first grouping the gradient directions of all pixels in each cell into a particular number of orientation \(angular\) bins; and then adding up the gradient magnitudes of the gradients in each angular bin \(see Fig. 3\). The number of bins in the histogram is a free parameter and it is usually set to 9 angular bins.
 
