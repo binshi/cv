@@ -16,5 +16,7 @@ Given a pixel p in an array fast compares the brightness of p to surrounding 16 
 
 ### Scale And Rotation Invariance![](/assets/Screenshot 2019-11-04 at 6.13.42 PM.png)![](/assets/Screenshot 2019-11-04 at 6.15.28 PM.png)
 
+### Feature Matching
 
+![](/assets/Screenshot 2019-11-05 at 3.24.05 PM.png)![](/assets/Screenshot 2019-11-05 at 3.25.23 PM.png)
 
