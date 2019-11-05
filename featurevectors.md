@@ -18,7 +18,7 @@ Given a pixel p in an array fast compares the brightness of p to surrounding 16 
 
 ### BRIEF\(Binary Robust Independent Elementary Features\)
 
-Convert the keypoints detected by FAST and convert them into feature vectors\(binary feature vector\).Binary feature is stored easily in memory and  can be computed fast and can be run with devices with limited memory.
+Convert the keypoints detected by FAST and convert them into feature vectors\(binary feature vector\).Binary feature is stored easily in memory and  can be computed fast and can be run with devices with limited memory. Starts by smoothing with a gaussian kernel so that it is not too sensitive to noise. For a pixel, BRIEF selects random pair of pixels in a defined neighborhood called patch which is a square around a pixel.The second pixel is selected from the neighborhood defined by the gaussian distribution with  std deviation sigma.   
 
 ![](/assets/Screenshot 2019-11-04 at 6.18.39 PM.png)
 
