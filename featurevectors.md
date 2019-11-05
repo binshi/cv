@@ -24,5 +24,9 @@ Given a pixel p in an array fast compares the brightness of p to surrounding 16 
 
 ![](/assets/Screenshot 2019-11-05 at 6.25.03 PM.png)
 
-![](/assets/Screenshot 2019-11-05 at 6.26.22 PM.png)
+### ![](/assets/Screenshot 2019-11-05 at 6.26.22 PM.png)Learning to Find Features
+
+Now that you've seen a number of feature extraction techniques, you should have a good understanding of how different objects and areas in an image can be identified by their unique shapes and colors.
+
+Convolutional filters and ORB and HOG descriptors all rely on patterns of intensity to identify different shapes \(like edges\) and eventually whole objects \(with feature vectors\). You've even seen how k-means clustering can be used to group data without any labels.
 
