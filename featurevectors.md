@@ -20,3 +20,9 @@ Given a pixel p in an array fast compares the brightness of p to surrounding 16 
 
 ![](/assets/Screenshot 2019-11-05 at 3.24.05 PM.png)![](/assets/Screenshot 2019-11-05 at 3.25.23 PM.png)
 
+### HOG\(Histogram of Oriented Gradients\)
+
+![](/assets/Screenshot 2019-11-05 at 6.25.03 PM.png)
+
+![](/assets/Screenshot 2019-11-05 at 6.26.22 PM.png)
+
