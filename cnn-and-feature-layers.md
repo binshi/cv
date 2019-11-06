@@ -4,5 +4,5 @@
 
 The CNN itself is comprised of a number of layers; layers that extract features from input images, reduce the dimensionality of the input, and eventually produce class scores. In this lesson, we'll go over all of these different layers, so that you know how to define and train a complete CNN!![](/assets/Screenshot 2019-11-06 at 8.15.12 AM.png)
 
-Detailed layers that make up a classification CNN.
+
 
