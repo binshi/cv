@@ -22,7 +22,11 @@ Convert the keypoints detected by FAST and convert them into feature vectors\(bi
 
 ![](/assets/Screenshot 2019-11-04 at 6.18.39 PM.png)
 
-### Scale And Rotation Invariance![](/assets/Screenshot 2019-11-04 at 6.13.42 PM.png)![](/assets/Screenshot 2019-11-04 at 6.15.28 PM.png)
+### Scale And Rotation Invariance: 
+
+Image pyramid is a multi-scale representation of an image with different resolutions. Then FAST runs to identify the keypoints in the ORB calculates the intensity centroid\(average intensity of a pixel\) in a given patch.  The angle is then calculated by measuring the orientation from the keypoint to  the centroid. It  then repeats for  each different  resolution image without reducing the patch size. This results in keypoints with different sizes. The circles illustrate the sizes of the different keypoints. ![](/assets/Screenshot 2019-11-04 at 6.13.42 PM.png)![](/assets/Screenshot 2019-11-04 at 6.15.28 PM.png)![](/assets/Screenshot 2019-11-06 at 8.03.22 AM.png)
+
+### 
 
 ### Feature Matching
 
