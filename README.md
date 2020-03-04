@@ -94,3 +94,22 @@ If we have an image and it's one-hot label is`[0, 1, 0, 0]`, what does that indi
 
 In order of \[cat value, tiger value, hippopotamus value, dog value\], that label indicates that it's an image of a tiger! Let's do one more example, what about the label`[0, 0, 0, 1]`?
 
+## Average Brightness {#average-brightness}
+
+Here were the steps we took to extract the average brightness of an image.
+
+1. Convert the image to HSV color space \(the Value channel is an approximation for brightness\)
+2. Sum up all the values of the pixels in the Value channel
+3. Divide that brightness sum by the area of the image, which is just the width times the height.
+
+This gave us one value: the average brightness or the average Value of that image.
+
+In the next notebook, make sure to look at a variety of day and night images and see if you can think of an average brightness value that will separate the images into their respective classes!
+
+The next step will be to feed this data into a classifier. A classifier might be as simple as a conditional statement that checks if the average brightness is above some threshold, then this image is labeled as 1 \(day\) and if not, it’s labeled as 0 \(night\).
+
+On your own, you can choose to create more features that help distinguish these images from one another, and we’ll soon learn about testing the accuracy of a model like this.
+
+  
+
+
