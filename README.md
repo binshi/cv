@@ -26,11 +26,11 @@ To select the most accurate color boundaries, it's often useful to use a[color p
 
 ### Why do we need labels? {#why-do-we-need-labels}
 
-_You _can tell if an image is night or day, but a computer cannot unless we tell it explicitly with a label!
+\_You \_can tell if an image is night or day, but a computer cannot unless we tell it explicitly with a label!
 
 This becomes especially important when we are testing the accuracy of a classification model.
 
-A classifier takes in an image as input and should output a`predicted_label`that tells us the predicted class of that image. Now, when we load in data, like you’ve seen, we load in what are called the`true_labels`which are the_correct_labels for the image.
+A classifier takes in an image as input and should output a`predicted_label`that tells us the predicted class of that image. Now, when we load in data, like you’ve seen, we load in what are called the`true_labels`which are the\_correct\_labels for the image.
 
 To check the accuracy of a classification model, we compare the predicted and true labels. If the true and predicted labels match, then we’ve classified the image correctly! Sometimes the labels do not match, which means we’ve misclassified an image.
 
@@ -47,4 +47,20 @@ It’s good practice to use numerical labels instead of strings or categorical l
 Okay, now you’re familiar with the day and night image data AND you know what a label is and why we use them; you’re ready for the next steps. We’ll be building a classification pipeline from start to end!
 
 Let’s first brainstorm what steps we’ll take to classify these images.
+
+## Distinguishing and Measurable Traits {#distinguishing-and-measurable-traits}
+
+When you approach a classification challenge, you may ask yourself: how can I tell these images apart? What traits do these images have that differentiate them, and how can I write code to repent their differences. Adding on to that, how can I ignore irrelevant or overly similar parts of these images?
+
+You may have thought about a number of distinguishing features: day images are much brighter, generally, than night images. Night images also have these really bright small spots, so the brightness over the whole image varies a lot more than the day images. There is a lot more of a gray/blue color palette in the day images.
+
+There are lots of measurable traits that distinguish these images, and these measurable traits are referred to as**features**.
+
+A feature a measurable component of an image or object that is, ideally, unique and recognizable under varying conditions - like under varying light or camera angle. And we’ll learn more about features soon.
+
+### Standardizing and Pre-processing {#standardizing-and-pre-processing}
+
+But we’re getting ahead of ourselves! To extract features from any image, we have to pre-process and standardize them!
+
+Next we’ll take a look at the standardization steps we should take before we can consistently extract features.
 
