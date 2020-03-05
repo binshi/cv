@@ -82,6 +82,12 @@ Open CV filtering: [https://opencv-python-tutroals.readthedocs.io/en/latest/py\_
 
 #### **Low pass filter**![](/assets/Screenshot 2019-10-30 at 12.47.34 PM.png)Averaging filter![](/assets/Screenshot 2019-10-30 at 12.48.27 PM.png)
 
+#### ![](/assets/Screenshot 2020-03-05 at 10.07.03 AM.png)
+
+Since surrounding pixels are higher than center pixel, the center pixel value also is higher\(brighter\). This results in an overall smoothed image.
+
+#### 
+
 #### Gaussian  filter![](/assets/Screenshot 2019-10-30 at 12.46.12 PM.png)
 
 
