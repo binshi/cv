@@ -41,6 +41,8 @@ Notice that this image has components of all frequencies. You can see a bright s
 
 ![](/assets/Screenshot 2020-03-05 at 9.32.38 AM.png)
 
+![](/assets/Screenshot 2020-03-05 at 9.38.08 AM.png)![](/assets/Screenshot 2020-03-05 at 9.40.46 AM.png)Positive or negative values indicates lightness or darkening of image
+
 ### Edge Handling {#edge-handling}
 
 Kernel convolution relies on centering a pixel and looking at it's surrounding neighbors. So, what do you do if there are no surrounding pixels like on an image corner or edge? Well, there are a number of ways to process the edges, which are listed below. It’s most common to use padding, cropping, or extension. In extension, the border pixels of an image are copied and extended far enough to result in a filtered image of the same size as the original image.
